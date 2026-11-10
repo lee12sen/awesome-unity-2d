@@ -18,7 +18,7 @@ Awesome Unity 2D에 관심을 가져 주셔서 감사합니다!
 - **로컬에서 기여:** 저장소를 내려받은 뒤 아무 텍스트 편집기로 수정하면 됩니다.
 
 ```bash
-git clone https://github.com/<your-username>/awesome-unity-2d.git
+git clone https://github.com/lee12sen/awesome-unity-2d.git
 cd awesome-unity-2d
 ```
 
