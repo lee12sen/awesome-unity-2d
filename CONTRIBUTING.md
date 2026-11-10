@@ -12,7 +12,7 @@ Awesome Unity 2D에 관심을 가져 주셔서 감사합니다!
 GitHub에서 이 저장소 오른쪽 위의 **Fork** 버튼을 눌러 내 계정으로 복사한 뒤, 내 컴퓨터로 가져옵니다.
 
 ```bash
-git clone https://github.com/lee12sen/awesome-unity-2d.git
+git clone https://github.com/YOUR-USERNAME/awesome-unity-2d.git
 cd awesome-unity-2d
 ```
 
