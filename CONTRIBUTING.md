@@ -1,32 +1,66 @@
-# 기여 가이드 (Contributing Guide)
+# Contributing to Awesome Unity 2D
 
 Awesome Unity 2D에 관심을 가져 주셔서 감사합니다!
 이 문서는 새로운 자료를 추가하거나 기존 내용을 고치는 방법을 안내합니다.
 
-## 기여할 수 있는 방법
-
-- 유용한 **새 자료 추가**
-- **깨진 링크** 신고 또는 수정
-- 설명의 **오타나 잘못된 정보** 수정
-- 새로운 **분류(카테고리)** 제안
-
-## 개발 환경 (Development Setup)
-
 이 저장소는 코드가 없는 문서형 프로젝트라서 별도 설치나 빌드가 필요 없습니다.
 
-- **웹에서 기여:** GitHub에서 `README.md`의 연필 아이콘을 눌러 바로 수정할 수 있습니다.
-- **로컬에서 기여:** 저장소를 내려받은 뒤 아무 텍스트 편집기로 수정하면 됩니다.
+## 🚀 시작하기
+
+### 1. Fork & Clone
+
+GitHub에서 이 저장소 오른쪽 위의 **Fork** 버튼을 눌러 내 계정으로 복사한 뒤, 내 컴퓨터로 가져옵니다.
 
 ```bash
 git clone https://github.com/lee12sen/awesome-unity-2d.git
 cd awesome-unity-2d
 ```
 
-수정한 Markdown이 어떻게 보이는지는 GitHub의 **Preview** 탭이나 VS Code의 Markdown 미리보기(`Ctrl + Shift + V`)로 확인할 수 있습니다.
+### 2. 브랜치 생성
 
-## 자료 추가 기준
+작업 내용을 알 수 있는 이름으로 브랜치를 만듭니다.
 
-새 자료는 아래 조건을 만족해야 합니다.
+```bash
+git checkout -b add/piskel
+```
+
+| 작업 | 브랜치 이름 | 예시 |
+| --- | --- | --- |
+| 자료 추가 | `add/자료이름` | `add/piskel` |
+| 내용 수정 | `fix/수정내용` | `fix/kenney-link` |
+| 자료 삭제 | `remove/자료이름` | `remove/old-site` |
+
+### 3. 변경사항 커밋 (Conventional Commits)
+
+`README.md`를 수정한 뒤, 추가한 링크가 잘 열리는지와 Markdown 미리보기에서 형식이 깨지지 않는지 확인하고 커밋합니다.
+
+```bash
+git add README.md
+git commit -m "docs: add Piskel to tools section"
+```
+
+커밋 메시지는 [Conventional Commits](https://www.conventionalcommits.org/) 형식을 따릅니다.
+
+| 타입 | 사용하는 경우 | 예시 |
+| --- | --- | --- |
+| `docs` | 자료 추가, 설명 수정 등 문서 변경 | `docs: add Piskel to tools section` |
+| `fix` | 깨진 링크, 잘못된 정보 수정 | `fix: update broken Kenney link` |
+| `chore` | 목차 정리 등 기타 작업 | `chore: sort tools alphabetically` |
+
+### 4. Push & Pull Request
+
+내 Fork 저장소로 올린 뒤, GitHub에서 원래 저장소로 **Pull Request**를 보냅니다.
+
+```bash
+git push origin add/piskel
+```
+
+- PR 제목은 커밋 메시지와 같은 형식으로 써 주세요.
+- PR 1개에는 **자료 1개**만 추가해 주세요. 리뷰와 관리가 쉬워집니다.
+
+> 💡 명령어가 익숙하지 않다면 GitHub 웹에서 `README.md`의 연필 아이콘을 눌러 수정해도 됩니다. Fork와 브랜치 생성이 자동으로 처리됩니다.
+
+## 📋 자료 추가 기준
 
 1. **유니티 2D 게임 개발과 관련**이 있어야 합니다.
 2. **무료로 사용 가능**해야 합니다. 유료라면 무료 버전이나 무료 사용 방법이 있어야 하며, 설명에 이를 밝혀 주세요.
@@ -34,7 +68,7 @@ cd awesome-unity-2d
 4. 이미 목록에 있는 자료와 **중복되지 않아야** 합니다. 추가 전에 `Ctrl + F`로 검색해 주세요.
 5. 광고나 홍보만을 위한 링크는 받지 않습니다.
 
-## 작성 형식 (Style Guide)
+## ✍️ 작성 형식 (Style Guide)
 
 각 항목은 아래 형식을 지켜 주세요.
 
@@ -52,31 +86,10 @@ cd awesome-unity-2d
 - 설명은 "무엇인지"와 "어디에 쓰는지"가 드러나게 짧게 써 주세요.
 - 링크는 가능한 한 공식 사이트 주소를 사용해 주세요.
 
-## 기여 절차 (Submitting Changes)
-
-1. 이 저장소를 **Fork** 합니다.
-2. 새 브랜치를 만듭니다. (예: `add-piskel`)
-3. `README.md`에 자료를 추가하거나 내용을 수정합니다.
-4. **확인합니다.** 추가한 링크가 잘 열리는지, 미리보기에서 형식이 깨지지 않는지 확인해 주세요.
-5. 변경 내용을 커밋합니다.
-6. 원래 저장소로 **Pull Request**를 보냅니다.
-
-GitHub 웹사이트에서 `README.md`의 연필 아이콘을 눌러 수정하면 Fork와 브랜치 생성이 자동으로 처리되므로, 명령어를 몰라도 기여할 수 있습니다.
-
-## 커밋 메시지 및 PR 제목 규칙
-
-| 작업 | 형식 | 예시 |
-| --- | --- | --- |
-| 자료 추가 | `Add: 자료 이름` | `Add: Piskel` |
-| 내용 수정 | `Fix: 수정 내용` | `Fix: Kenney 링크 수정` |
-| 자료 삭제 | `Remove: 자료 이름 (이유)` | `Remove: OldSite (서비스 종료)` |
-
-Pull Request 1개에는 **자료 1개**만 추가해 주세요. 리뷰와 관리가 쉬워집니다.
-
-## 문제 신고
+## 🐛 문제 신고
 
 깨진 링크나 잘못된 정보를 발견했지만 직접 고치기 어렵다면, **Issues** 탭에서 새 이슈를 열어 알려 주세요.
 
-## 행동 강령
+## 🤝 행동 강령
 
 이 프로젝트에 참여하는 모든 분은 [행동 강령](CODE_OF_CONDUCT.md)을 지켜 주셔야 합니다.
