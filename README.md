@@ -58,14 +58,14 @@
 
 1. 위 목차에서 필요한 분야를 찾습니다.
 2. 링크를 눌러 자료를 확인합니다.
-3. 에셋을 게임에 사용할 때는 **각 사이트와 에셋의 라이선스를 반드시 확인**하세요. 이 목록의 라이선스(CC0)는 목록 자체에만 적용되며, 링크된 자료의 라이선스는 각각 다릅니다.
+3. 에셋을 게임에 사용할 때는 **각 사이트와 에셋의 라이선스를 반드시 확인**하세요. 이 목록의 라이선스(MIT)는 목록 자체에만 적용되며, 링크된 자료의 라이선스는 각각 다릅니다.
 
 ## 설치 (Installation)
 
 별도 설치가 필요 없는 문서형 저장소입니다. 웹에서 바로 보거나, 로컬에 받아 두고 싶다면 아래 명령어를 사용하세요.
 
 ```bash
-git clone https://github.com/<your-username>/awesome-unity-2d.git
+git clone https://github.com/lee12sen/awesome-unity-2d.git
 ```
 
 ## 기여하기 (Contributing)
@@ -75,4 +75,4 @@ git clone https://github.com/<your-username>/awesome-unity-2d.git
 
 ## 라이선스 (License)
 
-이 목록은 [CC0 1.0 Universal](LICENSE) 라이선스를 따릅니다. 누구나 자유롭게 복사, 수정, 배포할 수 있습니다.
+이 목록은 [MIT License](LICENSE)를 따릅니다. 저작권 및 라이선스 문구를 유지하면 누구나 자유롭게 사용, 수정, 배포할 수 있습니다.
